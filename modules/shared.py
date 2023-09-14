@@ -658,24 +658,24 @@ class TotalTQDM:
         #)
 
     def update(self):
-        if not opts.multiple_tqdm or cmd_opts.disable_console_progressbars:
-            return
-        if self._tqdm is None:
-            self.reset()
-        self._tqdm.update()
+        #if not opts.multiple_tqdm or cmd_opts.disable_console_progressbars:
+            #return
+        #if self._tqdm is None:
+            #self.reset()
+        #self._tqdm.update()
 
     def updateTotal(self, new_total):
-        if not opts.multiple_tqdm or cmd_opts.disable_console_progressbars:
-            return
-        if self._tqdm is None:
-            self.reset()
-        self._tqdm.total = new_total
+        #if not opts.multiple_tqdm or cmd_opts.disable_console_progressbars:
+            #return
+        #if self._tqdm is None:
+            #self.reset()
+        #self._tqdm.total = new_total
 
     def clear(self):
-        if self._tqdm is not None:
-            self._tqdm.refresh()
-            self._tqdm.close()
-            self._tqdm = None
+        #if self._tqdm is not None:
+            #self._tqdm.refresh()
+            #self._tqdm.close()
+            #self._tqdm = None
 
 
 total_tqdm = TotalTQDM()
