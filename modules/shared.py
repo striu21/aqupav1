@@ -650,12 +650,12 @@ class TotalTQDM:
         self._tqdm = None
 
     def reset(self):
-        self._tqdm = tqdm.tqdm(
-            desc="Total progress",
-            total=state.job_count * state.sampling_steps,
-            position=1,
-            file=progress_print_out
-        )
+        #self._tqdm = tqdm.tqdm(
+            #desc="Total progress",
+            #total=state.job_count * state.sampling_steps,
+            #position=1,
+            #file=progress_print_out
+        #)
 
     def update(self):
         if not opts.multiple_tqdm or cmd_opts.disable_console_progressbars:
