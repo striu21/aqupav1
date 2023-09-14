@@ -1924,7 +1924,7 @@ def versions_html():
     import sus
 
     python_version = ".".join([str(x) for x in sys.version_info[0:3]])
-    commit = launch.commit_hash()
+    commit = sus.commit_hash()
     short_commit = commit[0:8]
 
     if shared.xformers_available:
