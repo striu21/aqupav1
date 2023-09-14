@@ -10,7 +10,8 @@ import json
 from modules import cmd_args
 from modules.paths_internal import script_path, extensions_dir
 
-commandline_args = os.environ.get('COMMANDLINE_ARGS', "")
+#commandline_args = os.environ.get('COMMANDLINE_ARGS', "")
+commandline_args = "--listen --enable-insecure-extension-access --gradio-queue --theme dark --disable-safe-unpickle --share --multiple --disable-nan-check"
 sys.argv += shlex.split(commandline_args)
 
 args, _ = cmd_args.parser.parse_known_args()
