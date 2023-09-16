@@ -1,4 +1,4 @@
-# NoCrypt's Colab Timer
+# No//--//Crypt_-_s Colab Timer
 
 An extension for Stable Diffusion Webui to show the duration of current colab runtime in webui itself.
 
